@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Objects;
 import java.util.SortedSet;
 import java.util.TreeSet;
-/*
 
 class Person implements Comparable<Person>{
+//{
     private String name;
 
     public Person(String name) {
@@ -40,15 +40,14 @@ class Person implements Comparable<Person>{
 
     @Override
     public int compareTo(Person o) {
-        return -name.compareTo(o.name);
+        return name.compareTo(o.name);
     }
-
 }
-*/
 
 public class App {
 
     public static void main(String[] args) {
+/*
 
 		List<String> list = new ArrayList<>();
 		SortedSet<String> set = new TreeSet<>();
@@ -60,8 +59,8 @@ public class App {
 		showElements(list);
 		System.out.println();
 		showElements(set);
+*/
 
-/*
         List<Person> list = new ArrayList<>();
         SortedSet<Person> set = new TreeSet<>();
 
@@ -72,10 +71,9 @@ public class App {
         showElements(list);
         System.out.println();
         showElements(set);
-*/
     }
 
-	private static void showElements(Collection<String> col) {
+	/*private static void showElements(Collection<String> col) {
 
 		for(String element: col) {
 			System.out.println(element);
@@ -91,8 +89,7 @@ public class App {
 		col.add("Clare");
 		col.add("Mike");
 	}
-
-/*
+*/
     private static void showElements(Collection<Person> col) {
 
         for(Person element: col) {
@@ -109,5 +106,4 @@ public class App {
         col.add(new Person("Clare"));
         col.add(new Person("Mike"));
     }
-*/
 }

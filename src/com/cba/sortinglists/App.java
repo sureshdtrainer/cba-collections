@@ -5,7 +5,6 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-/*
 
 class Person {
     private int id;
@@ -34,8 +33,6 @@ class Person {
 
 
 }
-*/
-/*
 
 class StringLengthComparator implements Comparator<String>{
 
@@ -52,9 +49,7 @@ class StringLengthComparator implements Comparator<String>{
     }
 
 }
-*/
 
-/*
 class ReverseAlphabeticalComprator implements Comparator<String>{
 
     @Override
@@ -63,7 +58,6 @@ class ReverseAlphabeticalComprator implements Comparator<String>{
     }
 
 }
-*/
 
 public class App {
 
@@ -80,10 +74,10 @@ public class App {
         animals.add("mongoose");
         animals.add("elephant");
 
-        Collections.sort(animals);
+        //Collections.sort(animals);
 
         //Collections.sort(animals, new ReverseAlphabeticalComprator());
-        //Collections.sort(animals, new StringLengthComparator());
+        Collections.sort(animals, new StringLengthComparator());
 
         for(String animal: animals) {
             System.out.println(animal);
@@ -117,23 +111,26 @@ public class App {
 
         /////Sorting arbitary object
 
-  /*      List<Person> people = new ArrayList<>();
+        List<Person> people = new ArrayList<>();
 
         people.add(new Person(1, "Joe"));
         people.add(new Person(3, "Bob"));
         people.add(new Person(4, "Clare"));
         people.add(new Person(2, "Sue"));
 
+        //Collections.sort(people);
         Collections.sort(people, new Comparator<Person>() {
         // sort by id
             //reverse id
             @Override
             public int compare(Person o1, Person o2) {
-                if(o1.getId()> o2.getId())
+                /*if(o1.getId()> o2.getId())
                     return -1;
                 else if (o1.getId()< o2.getId())
                     return 1;
                 return 0;
+
+*/          return -o1.getName().compareTo(o2.getName());
             }
         });
         //sort by name
@@ -143,7 +140,6 @@ public class App {
             System.out.println(person);
         }
 
-*/
     }
 
 

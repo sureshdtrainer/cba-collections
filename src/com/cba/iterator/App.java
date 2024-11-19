@@ -21,9 +21,9 @@ public class App {
             String value = it.next();
             System.out.println(value);
 
-            if(value.equals("cat")) {
+//        if(value.equals("cat")) {
                 it.remove();
-            }
+  //          }
         }
 
         System.out.println();
@@ -33,7 +33,7 @@ public class App {
 
         for(String animal: animals) {
             System.out.println(animal);
-
+            //animals.remove("dog");
         }
 
 

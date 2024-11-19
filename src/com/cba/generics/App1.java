@@ -12,15 +12,15 @@ public class App1 {
 
         // compilation error, because printArray(String[] arr) works only with String arrays,
         // but not with other arrays.
-        //printArray(ints);
+        printArray(ints);
+        printArray(strings);
     }
 
-	private static void printArray(String[] arr) {
+	/*private static void printArray(String[] arr) {
 		for (String string : arr) {
 			System.out.println("Element: " + string);
 		}
-	}
-/*
+	}*/
 
     private static <E> void printArray(E[] arr) {
         // Display array elements
@@ -28,6 +28,5 @@ public class App1 {
             System.out.println("Element: " + element);
         }
     }
-*/
 
 }
