@@ -1,4 +1,4 @@
-package com.cba.threads;
+package com.cba.threads.start;
 class Runner extends Thread{
     @Override
     public void run(){
