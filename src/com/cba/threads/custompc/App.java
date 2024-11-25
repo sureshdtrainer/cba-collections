@@ -1,7 +1,7 @@
 package com.cba.threads.custompc;
 
 
-import com.cba.threads.waitandnotifiy.Processor;
+import com.cba.threads.custompc.Processor;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
