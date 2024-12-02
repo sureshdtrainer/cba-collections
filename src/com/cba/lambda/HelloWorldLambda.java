@@ -13,7 +13,7 @@ public class HelloWorldLambda {
         //Declarative Example
         IntStream numbers = IntStream.of(1,2,3,4,5);
         //numbers.forEach((a)-> System.out.println(a));
-        numbers.forEach(System.out::println);
+        numbers.forEach(System.out::println); //Method Reference
         //implementing sayHelloWorld using Lambda
         HelloWorldInterface helloWorldInterface = ()-> {
             //complex logi
