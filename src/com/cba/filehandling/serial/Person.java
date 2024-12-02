@@ -1,11 +1,15 @@
 package com.cba.filehandling.serial;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 public class Person implements Serializable {
 
-    private int id;
+    private static final long serialVersionUID = 123456L;
+    private transient int id;
     private String name;
+
+    public static int count;
 
     public Person(int id, String name){
         this.id = id;
@@ -17,6 +21,6 @@ public class Person implements Serializable {
         return "Person{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                '}';
+                '}' + count;
     }
 }

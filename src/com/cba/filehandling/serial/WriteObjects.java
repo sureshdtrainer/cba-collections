@@ -10,6 +10,8 @@ public class WriteObjects {
     public static void main(String[] args) {
         System.out.println("Writing Objects to file");
 
+        Person.count= 222;
+
         Person suresh = new Person(12345, "Suresh");
         Person ramesh = new Person(45678, "Ramesh");
 
