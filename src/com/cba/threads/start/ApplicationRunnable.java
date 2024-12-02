@@ -38,6 +38,19 @@ public class ApplicationRunnable {
             }
         }));
         thread3.start();
+        Thread thread4 = new Thread(() -> {
+            //Custom logic
+            for(int i =0 ; i<5; i++){
+                System.out.println("Custom using Lambda Hello: " +i + "Thread: " + Thread.currentThread().getName());
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        });
+        thread4.start();
         System.out.println("Exiting from Main: Thread: " + Thread.currentThread().getName());
     }
 }
